@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 74px;
+  border-bottom: 2px solid gainsboro;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  width: 20%;
+}
+.header__logo img {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+.header__searchbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header__searchbar input {
+  width: 80%;
+  outline: none;
+  border: none;
+  background-color: rgb(241, 243, 244);
+  height: 34px;
+  margin: 20px 0 20px 0;
+  border-radius: 2px;
+  padding-left: 10px;
+}
+.header__searchbar input::-moz-placeholder {
+  font-size: 15px;
+}
+.header__searchbar input::placeholder {
+  font-size: 15px;
+}
+.header__login {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 20%;
+}
+.header__login span {
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */

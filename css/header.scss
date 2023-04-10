@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    border-bottom: 2px solid gainsboro;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        width: 20%;
+        cursor:pointer;
+        img {
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__searchbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        input {
+            width: 80%;
+            outline: none;
+            border: none;
+            background-color: rgb(241,243,244);
+            height: 34px;
+            margin: 20px 0 20px 0;
+            border-radius: 2px;
+            padding-left: 10px;
+            &::-webkit-input-placeholder {
+                font-size: 15px;
+            }
+            &::-moz-placeholder {
+                font-size: 15px;
+            }
+            &:-ms-input-placeholder {
+                font-size: 15px;
+            }
+            &::-ms-input-placeholder {
+                font-size: 15px;
+            }
+            &::placeholder {
+                font-size: 15px;
+            }
+        }
+    }
+
+    &__login {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 20%;
+        span {
+            cursor: pointer;
+        }
+    }
+}

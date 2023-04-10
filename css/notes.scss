@@ -1,0 +1,91 @@
+@-webkit-keyframes append-animate  {
+    from {
+        transform:translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform:translateY(0);
+        opacity: 1;	
+    }
+}
+@keyframes append-animate  {
+    from {
+        transform:translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform:translateY(0);
+        opacity: 1;	
+    }
+}
+.notes{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    &__pre{
+        &__text{
+            margin-top: 15px;
+        }
+    }
+
+    &__add{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.12);
+        border-radius: 5px;
+        textarea, input{
+            padding: 10px;
+            border: none;
+            outline: none;
+            resize: none;
+        }
+        .take_note_title{
+            display: none;
+            &_active{
+                display: block;
+            }
+        }
+    }
+    &__pin{
+        cursor: pointer;
+        font-size: 25px;
+        display: inline;
+        &:hover{
+            color:yellow;
+        }
+    }
+    &__pinned{
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    &__list{
+        margin-top: 15px;
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        &__item{
+            width: 240px;
+            min-height: 146px;
+            padding: 15px;
+            border-radius: 5px;
+            -webkit-animation: append-animate .3s linear;
+                    animation: append-animate .3s linear;
+            word-break: break-all;
+
+            &__title{
+                font-weight: 700;
+            }
+            &__body{
+            }
+
+        }
+    }
+}
